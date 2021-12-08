@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+  background-repeat: no-repeat;
+background-attachment: fixed;  
+background-size: cover;
+}
+.artist a {
+  
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 50%;
+  
+}
+  .column {
+   
+    float: left;
+    width: 13.4%;
+    padding: 38px;
+    transition: transform .2s;
+  margin: 0 auto;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    position: relative;
+  }
+  
+  
+  .column:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    opacity: 0.5;
+    transform: scale(1.5); 
+  }
+  
+ 

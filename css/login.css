@@ -1,0 +1,45 @@
+.box{
+    background-color: transparent;
+    border: 15px;
+    border-radius: 0.1cm;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: auto;
+}
+form {border: 3px solid #f1f1f1;}
+input[type=text],input[type=password]{
+    width: 95%;
+    padding: 20px 20px;
+    display: inline-block;
+    border: 2px solid rgb(80, 120, 207);
+    box-sizing: border-box;
+    border-radius: 0.2cm;
+}
+.container{
+    margin-left: 10px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+}
+button {
+    background-color: #5c26d8;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 0.1cm;
+    cursor: pointer;
+    width: 46.5%;
+  }
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  span.psw {
+    float: right;
+    padding-top: 16px;
+    padding-right: 10px;
+  }
+  

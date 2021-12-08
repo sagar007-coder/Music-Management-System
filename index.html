@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+ integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" 
+ integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <div id="root"></div>
+  <title>Spot</title>
+  
+</head>
+<body>
+  <div class="navbar">
+    <a href="">Profile</a>
+    <a href="about.html">About</a>
+    <a href="#contact">Contact</a>
+    <a href="newsletter.html">Subscribe</a>
+  <div style="float: right;">
+    <a href="login.html">Sign in &nbsp<i style="color: beige;padding-left: 25%;" class="fas fa-sign-in-alt"></i></a>
+  </div>
+  </div>
+  <div class="row">
+    <div class="column1">
+      <button class="button button1">Home</button>
+    </div>
+    <div class="column1">
+     <a href="#playlist"><button class="button button2">Playlists</button></a> 
+    </div>
+    <div class="column1">
+     <a href="#new"><button class="button button3">New Releases</button></a> 
+    </div>
+    <div class="column1">
+    <a href="artist.html"><button class="button button4">Artists/ Genre</button></a>  
+    </div>
+    <div class="column1">
+      <button class="button button5">Live Podcasts</button>
+    </div>
+    <div class="column1">
+      <a href="weekly.html"><button class="button button6">Weekly 10 Hits</button></a>
+    </div>
+    <div class="column1">
+      <a href="musicplayer.html"><button class="button button7">Downloaded Songs</button></a>
+    </div>
+    
+  </div>
+  <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+   
+    <img src="images/slider2.jpeg" style="width:100%">
+    <div class="text">Pop music is aspirin and the blues are vitamins</div>
+  </div>
+
+  <div class="mySlides fade">
+   
+    <img src="images/slider.jpeg" style="width:100%">
+    <div class="text">I'm happy to sparkle like a glazed disco ball</div>
+  </div>
+
+  <div class="mySlides fade">
+   
+    <img src="images/slider3.jpeg" style="width:100%">
+    <div class="text">Life is like a beautiful melody, only the lyrics are messed up</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+ 
+    
+ <h2>New Releases</h2>
+ <div class="row" id="new">
+  <div class="column">
+    <img  src="images/Stay.jpeg" alt="Stay" style="width:100%; border-radius: 10px;">
+    <div class="overlay">
+  <div class="btn">
+      <button  onclick="play()"><i class="far fa-play-circle"></i></button>
+     <button onclick="pause()"><i class="far fa-pause-circle"></i></button> 
+    </div></div>
+    <audio id="audio" src="music/Stay.mp3"></audio>
+    <figcaption><b>Stay</b><br>Justin Bieber, The Kid LAROI</figcaption>
+  </div>
+  <div class="column">
+    <img src="images/6.jpeg" alt="Attention" style="width:100%; border-radius: 10px;">
+    <div class="overlay">
+      <div class="btn">
+      <button  onclick="play1()"><i class="far fa-play-circle" ></i></button>
+     <button onclick="pause1()"><i class="far fa-pause-circle"></i></button> 
+    </div></div>
+    <audio id="audio1" src="music/Attention.mp3"></audio>
+    <figcaption><b>Attention</b><br>Charlie Puth</figcaption>
+
+  </div>
+  <div class="column">
+    <img src="images/LT.jpeg" alt="Two of us" style="width:100%; border-radius: 10px;">
+    <div class="overlay">
+      <div class="btn">
+      <button  onclick="play2()"><i class="far fa-play-circle"></i></button>
+     <button onclick="pause2()"><i class="far fa-pause-circle"></i></button> 
+    </div></div>
+    <audio id="audio2" src="music/Two of us.mp3"></audio>
+    <figcaption><b>Two of US</b><br>Louis Tomlinson</figcaption>
+
+  </div>
+  <div class="column">
+    <img src="images/sb.jpeg" alt="Levitating" style="width:100%; border-radius: 10px;">
+    <div class="overlay">
+      <div class="btn">
+      <button  onclick="play3()"><i class="far fa-play-circle"></i></button>
+     <button onclick="pause3()"><i class="far fa-pause-circle"></i></button> 
+    </div></div>  
+    <audio id="audio3" src="music/Levitating.mp3"></audio>
+    <figcaption><b>Levitating</b><br>Dua Lipa</figcaption>
+  </div>
+  <div class="column">
+    <img src="images/prefect.jpeg" alt="Perfect" style="width:100%; border-radius: 10px;">
+    <div class="overlay">
+      <div class="btn">
+      <button  onclick="play4()"><i class="far fa-play-circle"></i></button>
+     <button onclick="pause4()"><i class="far fa-pause-circle"></i></button> 
+    </div></div>  
+    <audio id="audio4" src="music/Perfect.mp3"></audio>
+    <figcaption><b>Perfect</b><br>One Direction</figcaption>
+  </div>
+  <div class="column">
+    <img src="images/lmds.jpeg" alt="Let Me down Slowly" style="width:100%; border-radius: 10px;">
+    <div class="overlay">
+      <div class="btn">
+      <button  onclick="play5()"><i class="far fa-play-circle"></i></button>
+     <button onclick="pause5()"><i class="far fa-pause-circle"></i></button> 
+    </div></div>
+    <audio id="audio5" src="music/Let me down slowly.mp3"></audio>
+    <figcaption><b>Let Me down Slowly</b><br>Alec Benjamin</figcaption>
+  </div>
+ </div>
+ <br>
+ <br>
+ <h2>Playlists</h2>
+ <div class="row" id="playlist">
+  <div class="column">
+    <a href="sad.html"><img  src="images/sad.jpeg" alt="Stay" style="width:100%; border-radius: 10px;"></a>
+    <figcaption><b>Sad </b></figcaption>
+  </div>
+  <div class="column">
+    <a href="love.html"><img src="images/love.jpeg" alt="Attention" style="width:100%; border-radius: 10px;"></a> 
+    <figcaption><b>Love</b></figcaption>
+ </div>
+  <div class="column">
+   <a href="workout.html"> <img src="images/workout.jpeg" alt="Two of us" style="width:100%; border-radius: 10px;"></a> 
+    <figcaption><b>Workout</b></figcaption>
+
+  </div>
+  <div class="column">
+    <a href="evergreen.html"> <img src="images/evergreen.jpeg" alt="Levitating" style="width:100%; border-radius: 10px;"></a> 
+   <figcaption><b>Evergreen Songs</b></figcaption>
+  </div>
+  <div class="column">
+    <a href="party.html"><img src="images/party.jpeg" alt="Perfect" style="width:100%; border-radius: 10px;"></a> 
+ <figcaption><b>Party</b></figcaption>
+  </div>
+  <div class="column">
+    <a href="motivation.html"><img src="images/motivation.jpeg" alt="Let Me down Slowly" style="width:100%; border-radius: 10px;"></a> 
+   <figcaption><b>Motivation</b></figcaption>
+  </div>
+ </div>
+ <br>
+ <br>
+ 
+ <h2>Podcasts</h2>
+ <div class="owl-carousel owl-theme">
+  <div class="item">
+    <img src="images/album1.jpeg">
+   </div>
+  <div class="item">
+    <img src="images/album2.jpeg">
+   </div>
+  <div class="item">
+    <img src="images/album3.jpeg">
+  </div>
+  <div class="item">
+    <img src="images/album4.jpeg">
+  </div>
+  <div class="item">
+    <img src="images/album5.jpeg">
+  </div>
+  <div class="item">
+    <img src="images/album6.jpeg">
+  </div>
+  <div class="item">
+    <img src="images/album7.jpeg">
+  </div>
+   <div class="item">
+    <img src="images/album1.jpeg">
+  </div>
+   <div class="item">
+    <img src="images/album5.jpeg"> 
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" 
+integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin: 10,
+    nav: false,
+    dots:false,
+	autoplay: true,
+	autoplayTimeout: 1500,
+    responsive:{
+        0:{
+            items:1
+        },
+        400:{
+          items:2
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:6
+                  }
+    }
+})
+</script>
+ 
+ 
+ 
+<script>
+ function play(){
+       var audio = document.getElementById("audio");
+       audio.play();
+                 }
+                 function pause(){
+                   var audio= document.getElementById("audio");
+                   audio.pause();
+                 } function play1(){
+       var audio1 = document.getElementById("audio1");
+       audio1.play();
+                 }
+                 function pause1(){
+                   var audio1= document.getElementById("audio1");
+                   audio1.pause();
+                 }
+                 function play2(){
+       var audio2 = document.getElementById("audio2");
+       audio2.play();
+                 }
+                 function pause2(){
+                   var audio2= document.getElementById("audio2");
+                   audio2.pause();
+                 }
+                 function play3(){
+       var audio3 = document.getElementById("audio3");
+       audio3.play();
+                 }
+                 function pause3(){
+                   var audio3= document.getElementById("audio3");
+                   audio3.pause();
+                 }
+                 function play4(){
+       var audio4 = document.getElementById("audio4");
+       audio4.play();
+                 }
+                 function pause4(){
+                   var audio4= document.getElementById("audio4");
+                   audio4.pause();
+                 }
+                 function play5(){
+       var audio5 = document.getElementById("audio5");
+       audio5.play();
+                 }
+                 function pause5(){
+                   var audio5 = document.getElementById("audio5");
+                   audio5.pause();
+                 }
+                 
+                 
+</script>
+<script>var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }</script>
+<footer>
+  <div class="content" style="font-family: 'Acme', sans-serif;">
+    <div class="left box">
+      <div class="upper">
+        <div class="topic">About us</div>
+        <p>Blank Canvas is a team of website developers and designers who can provide you with your desired professional
+         website.
+        </p>
+      </div>
+      <div class="lower">
+        <div class="topic">Contact us</div>
+        <div class="phone">
+          <a href="#"><i class="fas fa-phone-volume"></i>+91 7991383871</a>
+        </div>
+        <div class="email">
+          <a href="#"><i class="fas fa-envelope"></i>weblankcanvas@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="middle box">
+      <div class="topic">Quick Links</div>
+      <div><a href="index.html">Home</a></div>
+      <div><a href="#playlist">Playlists</a></div>
+      <div><a href="#new">New Releases</a></div>
+      <div><a href="artist.html">Artists/Genre</a></div>
+      <div><a href="weekly.html">Weekly 10 Hits</a></div>
+      <div><a href="musicplayer.html">Downloaded Songs</a></div>
+    </div>
+    <div class="right box" id="contact">
+           <div class="topic">Our social media links<br><br>Get in touch with us.</div>
+        <div class="media-icons">
+          <a href="https://www.facebook.com/profile.php?id=100069507414211"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com/web_blankcanvas_?utm_medium=copy_link"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/BlankCa98773863"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/blank-canvas-879990214/"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      
+    </div>
+  </div>
+  
+  <div class="bottom">
+    <p>Copyright © 2021<a href="index.html">Blank Canvas</a> All rights reserved  </p>
+   
+         <a href="index.html">
+           <i class="fas fa-caret-square-up" style="font-size: 30px;color: #ccc;"></i></a>
+        </div>
+  
+</footer>
+</body>
+</html>
